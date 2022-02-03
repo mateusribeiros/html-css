@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: white;
+    width: auto;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg,
+            rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1;
+}
+
+#description {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+h1,
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 100vw;
+    margin: 3rem auto 0 auto;
+}
+
+@media (min-width:480px) {
+    .container {
+        max-width: 560px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+.header {
+    padding: 0 0.7rem;
+    margin-bottom: 1.9rem;
+}
+
+
+.span {
+    font-size: 0.9rem;
+    margin-left: 0.3rem;
+    color: #e4e4e4;
+}
+
+.text-center {
+    text-align: center;
+}
+
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+@media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+    }
+}
+
+.form-group {
+    margin: 0 auto 1.3rem auto;
+    padding: 0.3rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.4rem;
+    padding: 0.4rem 0.8rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.3rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+    margin-right: 0.7rem;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.7rem;
+}
+
+.input-submit {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 1px;
+    cursor: pointer;
+}

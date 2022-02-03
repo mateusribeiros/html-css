@@ -1,0 +1,132 @@
+body {
+    min-width: 300px;
+    color: #4d4e53;
+    background: #fff;
+    line-height: 2;
+    font-family: arial, sans-serif;
+  }
+   
+  #navbar {
+    position: fixed;
+    min-width: 300px;
+    width: 310px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-right: solid rgba(0, 22, 22, 0.5);
+  }
+  
+  header {
+    color: #000;
+    margin: 15px 10px auto 0px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 520;
+  }
+  
+  
+  #navbar ul {
+    height: 90%;
+    padding: 0;
+    overflow-x: hidden;
+    overflor-y: auto;
+  }
+  
+  #navbar li {
+    color: #4d4e53;
+    list-style: none;
+    border-top: solid 1px;
+    position: relative;
+    width: 100%;
+  }
+  
+  #navbar a {
+   display: block;
+   color: #4d4e53;
+   padding: 15px 35px;
+   cursor: pointer;
+   text-decoration: none;
+  }
+  
+  #main-doc {
+    position: absolute;
+    margin-left: 320px;
+    padding: 25px;
+    margin-bottom: 120px;
+  }
+  
+  article {
+    margin-top: -15.3px;
+    margin-left: -15.2px;
+    line-height: 30px;
+  }
+  
+  article section {
+    margin: 20px;
+    font-size: 1em;
+  }
+  
+  section li {
+    margin: 0px 0px 0px 30px;
+  }
+  
+  section code {
+    display: block;
+    text-align: left;
+    position: relative;
+    line-height: 2;
+    background: #f7f7f7;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px;
+  }
+  
+  h2 {
+    color: #000;
+    font-size: 2em;
+    font-weight: 520;
+  }
+  
+  section p {
+   margin-left: 25px; 
+  }
+  
+  @media (max-width: 1260px) {
+    #navbar ul {
+      border: solid 1px;
+      height: 210px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 280px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+    
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 275px;
+       }
+    }
+  
+  @media (max-width: 768px) {
+    #main-doc {
+      margin-left: -12px;
+    }
+      code {
+      margin-left: -25px;
+      width: 100%;
+      padding: 20px;
+      padding-left: 13px;
+      padding-right: 50px;
+      min-width: 240px;
+    }
+  }  
